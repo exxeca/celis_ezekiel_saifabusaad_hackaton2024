@@ -75,28 +75,28 @@
               </div>
 
       <!-- Navigation Bars -->
-        <!-- Desktop -->
-        <nav class="navbar desktop-nav">
-            <input type="radio" id="nav1" name="nav" checked />
-            <label for="nav1" class="nav-link">Events</label>
+                    <!-- Desktop Navigation -->
+              <nav class="navbar desktop-nav">
+                <input type="radio" id="nav1" name="nav" checked />
+                <label for="nav1" class="nav-link" data-target="#events">Events</label>
 
-            <input type="radio" id="nav2" name="nav" />
-            <label for="nav2" class="nav-link">Projects</label>
+                <input type="radio" id="nav2" name="nav" />
+                <label for="nav2" class="nav-link" data-target="#projects">Projects</label>
 
-            <input type="radio" id="nav3" name="nav" />
-            <label for="nav3" class="nav-link">Portfolios</label>
+                <input type="radio" id="nav3" name="nav" />
+                <label for="nav3" class="nav-link" data-target="#portfolios">Portfolios</label>
 
-            <div class="slide-indicator"></div>
-        </nav>
+                <div class="slide-indicator"></div>
+              </nav>
 
-        <!-- Mobile Navigation-->
-        <nav class="mobile-nav">
-            <input type="checkbox" class="checkbox" />
-            <span class="button-menu"></span>
-            <button class="option-a option">Events</button>
-            <button class="option-b option">Projects</button>
-            <button class="option-c option">Portfolios</button>
-        </nav>
+              <!-- Mobile Navigation -->
+              <nav class="mobile-nav">
+                <input type="checkbox" class="checkbox" />
+                <span class="button-menu"></span>
+                <button class="option-a option" data-target="#events">Events</button>
+                <button class="option-b option" data-target="#projects">Projects</button>
+                <button class="option-c option" data-target="#portfolios">Portfolios</button>
+              </nav>
 
         </header>
 
@@ -133,7 +133,7 @@
 
                 <div id="grid-row" class="grid-row col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
 
-                    <div div="textbox" class="box1 col-span-full l-col-span-full l-row-start-1 l-row-end-7">
+                    <div div="textbox" id="events" class="box1 col-span-full l-col-span-full l-row-start-1 l-row-end-7">
                       
                       <h3 class="text-b1">Join us at SDPA Industry Night 2025 to experience creativity and innovation firsthand! Discover inspiring projects like Brothers in Arms and explore the incredible talents of our Interactive Media Design students.</h3>
 
@@ -289,7 +289,7 @@
 
                 <!-- Project Exhibition / Cards -->
                 <div id="container-box" class="box col-span-full m-col-span-full l-col-start-1 l-col-end-13">
-                    <div class="project-exhibit">
+                    <div id="projects" class="project-exhibit">
                         <h3>Project Exhibit</h3>
                         <img src="images/output-onlinegiftools.gif" alt="blinker-red">
                     </div>
@@ -459,7 +459,7 @@
                 <div id="service15" class="col-span-full m-col-span-full l-col-start-1 l-col-end-4">
 
 
-                    <div class="e-card playing">
+                    <div  id="portfolios"  class="e-card playing">
                         <div class="image"></div>
                         
                         <div class="wave"></div>
