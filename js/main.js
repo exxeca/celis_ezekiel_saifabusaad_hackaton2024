@@ -175,55 +175,40 @@ function showSlides() {
 // scroll effect for the nav bars
 
 document.addEventListener('DOMContentLoaded', function () {
-  // For desktop navigation
-  const desktopNavLinks = document.querySelectorAll('.desktop-nav .nav-link');
-  desktopNavLinks.forEach(link => {
+  const navLinks = document.querySelectorAll('.nav-link'); // Desktop nav buttons
+  const mobileOptions = document.querySelectorAll('.option'); // Mobile nav buttons
+
+  // Function to handle scrolling
+  function smoothScrollToSection(targetId) {
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+          targetSection.scrollIntoView({
+              behavior: 'smooth', // Smooth scroll
+              block: 'start'      // Align to the top of the viewport
+          });
+      }
+  }
+
+  // Desktop navigation scroll
+  navLinks.forEach(link => {
       link.addEventListener('click', function () {
           const targetId = this.getAttribute('data-target');
-          const targetSection = document.querySelector(targetId);
-
-          if (targetSection) {
-              targetSection.scrollIntoView({
-                  behavior: 'smooth', // Smooth scroll
-                  block: 'start'      // Align to the top of the viewport
-              });
-          }
+          smoothScrollToSection(targetId);
       });
   });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  // For desktop navigation
-  const desktopNavLinks = document.querySelectorAll('.desktop-nav .nav-link');
-  desktopNavLinks.forEach(link => {
-      link.addEventListener('click', function () {
+  // Mobile navigation scroll
+  mobileOptions.forEach(option => {
+      option.addEventListener('click', function () {
           const targetId = this.getAttribute('data-target');
-          const targetSection = document.querySelector(targetId);
+          smoothScrollToSection(targetId);
 
-          if (targetSection) {
-              targetSection.scrollIntoView({
-                  behavior: 'smooth', // Smooth scroll
-                  block: 'start'      // Align to the top of the viewport
-              });
+          // Optionally close the menu after clicking (assuming you have a checkbox to toggle menu visibility)
+          const checkbox = document.querySelector('.checkbox');
+          if (checkbox.checked) {
+              checkbox.checked = false; // Close the mobile menu
           }
       });
   });
-
-  // For mobile navigation
-  const mobileNavButtons = document.querySelectorAll('.mobile-nav .option');
-  mobileNavButtons.forEach(button => {
-      button.addEventListener('click', function () {
-          const targetId = this.getAttribute('data-target');
-          const targetSection = document.querySelector(targetId);
-
-          if (targetSection) {
-              targetSection.scrollIntoView({
-                  behavior: 'smooth', // Smooth scroll
-                  block: 'start'      // Align to the top of the viewport
-              });
-          }
-      });
-  });
-});
 });
 

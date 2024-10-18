@@ -265,126 +265,148 @@ body {
 } */
 
 
+/* Base styles for nav positioning */
 nav {
-    position: fixed; /* or 'absolute' based on your layout */
-    top: 80vh;
-    left: -3%; /* Centers it horizontally */
-    transform: translateX(-50%); /* Offsets the position to center it */
-    z-index: 20; /* Ensure it's above other elements */
+  position: fixed;
+  top: 80vh;
+  left: 3%; /* Adjust to fit design */
+  transform: translateX(-50%); /* Offset the position to center it */
+  z-index: 20; /* Ensure it's above other elements */
 }
 
+/* Style for the circular button */
 .button-menu {
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 50%; /* Ensure it's a circle */
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    
-    color: #1e1e1e;
-    font-size: 30px;
-    font-weight: 700;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s ease-in-out; /* Transition for the background and scale */
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+  color: #1e1e1e;
+  font-size: 30px;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s ease-in-out; /* Transition for the background and scale */
 }
 
 .checkbox {
-    width: 20px;
-    height: 20px;
-    opacity: 0; /* Hide the checkbox */
-    position: absolute; /* Position to overlay the button */
-    z-index: 10;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  opacity: 0; /* Hide the checkbox */
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
 }
 
-
-
-
+/* Option buttons styling */
 .option {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    
-    color: black;
-    z-index: -1;
-    width: 125px;
-    height: 55px;
-    cursor: pointer;
-    font-weight: 700;
-    transition: all 0.3s ease; /* Smooth transition */
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.5) translateY(20px); /* Start scaled down and translated */
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+  color: black;
+  z-index: -1;
+  width: 125px;
+  height: 55px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease; /* Smooth transition */
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.5) translateY(20px); /* Start scaled down and translated */
 }
 
-/* Change button appearance on hover */
-.checkbox:hover ~ .button-menu,
-.checkbox:checked ~ .button-menu {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transform: scale(1.5); /* Slightly scale down */
-    box-shadow: none;
+/* Scale the button on hover */
+.mobile-nav:hover .button-menu {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transform: scale(1.5); /* Scale up on hover */
+  box-shadow: none;
 }
 
-/* Button content change */
+/* Button content change based on checked status */
 .checkbox:not(:checked) ~ .button-menu::before {
-    content: "🚀";
-    font-size: 20px;
+  content: "🚀";
+  font-size: 20px;
 }
 
 .checkbox:checked ~ .button-menu::after {
-    content: "❌";
-    font-size: 20px;
-    transform: scale(0.9);
-    box-shadow: none;
+  content: "❌";
+  font-size: 20px;
+  transform: scale(0.9);
+  box-shadow: none;
 }
 
-/* Hover effects */
+/* Hover effects for options */
 .option:hover,
 .option:active,
 .option:focus {
-    box-shadow: none;
-    transform: scale(0.95); /* Scale down on hover */
+  box-shadow: none;
+  transform: scale(0.95); /* Scale down on hover */
 }
 
-/* Show options with a liquid-like effect when checked */
+/* Show options when checkbox is checked */
 .checkbox:checked ~ .option {
-    opacity: 1; /* Make options visible */
-    transform: scale(1) translateY(0); /* Scale to normal size and reset translation */
+  opacity: 1; /* Make options visible */
+  transform: scale(1) translateY(0); /* Scale to normal size and reset translation */
 }
 
+/* Staggered animation for each option */
 .checkbox:checked ~ .option-a {
-    transition-delay: 0.2s; /* Delay for a staggered effect */
-    transform: translateY(-70px) scale(1.1); /* Slight upward movement with scaling */
+  transition-delay: 0.2s;
+  transform: translateY(-70px) scale(1.1); /* Slide upward and slightly scale */
 }
 
 .checkbox:checked ~ .option-b {
-    transition-delay: 0.3s; /* Delay for a staggered effect */
-    transform: translateY(-140px) scale(1.1); /* Slight upward movement with scaling */
+  transition-delay: 0.3s;
+  transform: translateY(-140px) scale(1.1);
 }
 
 .checkbox:checked ~ .option-c {
-    transition-delay: 0.4s; /* Delay for a staggered effect */
-    transform: translateY(-210px) scale(1.1); /* Slight upward movement with scaling */
+  transition-delay: 0.4s;
+  transform: translateY(-210px) scale(1.1);
 }
 
-/* Hide options when unchecked with a fade-out effect */
+/* Hide options when unchecked */
 .checkbox:not(:checked) ~ .option {
-    opacity: 0; /* Hide options */
-    transform: scale(0.5) translateY(20px); /* Scale down and move down */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hiding */
+  opacity: 0;
+  transform: scale(0.5) translateY(20px); /* Scale down and move down */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* On hover, the options will also pop up */
+.mobile-nav:hover .option {
+  opacity: 1; /* Reveal options on hover */
+  transform: scale(1) translateY(0); /* Scale to normal size */
+}
+
+/* Each option also staggers on hover */
+.mobile-nav:hover .option-a {
+  transition-delay: 0.2s;
+  transform: translateY(-70px) scale(1.1); /* Same upward movement */
+}
+
+.mobile-nav:hover .option-b {
+  transition-delay: 0.3s;
+  transform: translateY(-140px) scale(1.1);
+}
+
+.mobile-nav:hover .option-c {
+  transition-delay: 0.4s;
+  transform: translateY(-210px) scale(1.1);
 }
 
 
