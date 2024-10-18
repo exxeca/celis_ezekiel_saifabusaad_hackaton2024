@@ -75,7 +75,7 @@ body {
     font-weight: bold;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 5;
     transition: ba  ckground 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
   }
@@ -110,7 +110,7 @@ body {
   
   #nav3:checked ~ .slide-indicator {
     transform: translateX(190px); /* Third link (adjust based on your layout) */
-    width: 115px;
+    width: 135px;
     height: 50px;
   }
 
@@ -387,7 +387,7 @@ nav {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hiding */
 }
 
-/* From Uiverse.io by MikeAndrewDesigner */ 
+
 .e-card {
     margin: 100px auto;
     background: transparent;
