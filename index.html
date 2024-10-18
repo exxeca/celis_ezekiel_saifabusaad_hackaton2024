@@ -1,0 +1,916 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/gridfinal.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Hackaton</title>
+
+
+</head>
+    <body>
+
+<!-- Background -->
+    <section id="java-bg">
+      <h2 class="hidden">Java Bg</h2>
+        <div class="gradient-bg">
+
+          <svg viewBox="0 0 100vw 100vw" xmlns="http://www.w3.org/2000/svg" class="noiseBg">
+           
+              <filter id="noiseFilterBg">
+                <feTurbulence 
+                  type="fractalNoise" 
+                  baseFrequency="0.6" 
+                  stitchTiles="stitch" />
+              </filter>
+              
+              <rect 
+              width="100%" 
+              height="100%" 
+              filter="url(#noiseFilterBg)" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+            <defs>
+
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix 
+                    in="blur" 
+                    type="matrix" 
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" 
+                    result="goo" />
+                  <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+
+            </defs>
+          </svg>
+
+          <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+          </div>
+
+        </div>
+    </section>
+
+<!-- Header Date & Location -->
+
+        <header class="grid-con">
+            <h1 class="hidden">Header</h1>
+              <div draggable="true" id="logo" class="col-span-full m-col-start-1 m-col-end-13 l-col-span-full">
+                  <p>Friday April 18, 2024</p>
+                  <p>Fanshawe College</p>
+              </div>
+
+      <!-- Navigation Bars -->
+        <!-- Desktop -->
+        <nav class="navbar desktop-nav">
+            <input type="radio" id="nav1" name="nav" checked />
+            <label for="nav1" class="nav-link">Events</label>
+
+            <input type="radio" id="nav2" name="nav" />
+            <label for="nav2" class="nav-link">Projects</label>
+
+            <input type="radio" id="nav3" name="nav" />
+            <label for="nav3" class="nav-link">Portfolios</label>
+
+            <div class="slide-indicator"></div>
+        </nav>
+
+        <!-- Mobile Navigation-->
+        <nav class="mobile-nav">
+            <input type="checkbox" class="checkbox" />
+            <span class="button-menu"></span>
+            <button class="option-a option">Events</button>
+            <button class="option-b option">Projects</button>
+            <button class="option-c option">Portfolios</button>
+        </nav>
+
+        </header>
+
+
+        
+        <main>
+          <!-- Hero Image / Industry Night-->
+            <section class="grid-con">
+                <h2 class="hidden">Hero-image</h2>
+                <div id="hero-image" class="col-span-full col-start-1 col-end-5 m-col-span-full l-col-span-full">
+
+                  <h3 id="ind">INDUSTRY NIGHT</h3>
+                  
+                </div> 
+            </section>
+
+            <!-- Video Player -->
+
+            <section class="grid-con">
+                <h2 class="hidden">Products</h2>
+                <div id="video1" class="col-span-full col-start-1 col-end-5 m-col-span-full l-col-start-1 l-col-end-13">
+                  <video  controls preload="metadata" poster="images/maxresdefault.jpg">
+                    <source src="images/Color.mp4" type="video/mp4">
+                    <p>ops,somthing went wrong!</p>
+                </video>
+                </div>
+                
+            </section>
+
+            <!-- First Text Container -->
+
+            <section class="grid-con">
+                <h2 class="hidden">Services</h2>
+
+                <div id="grid-row" class="grid-row col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+
+                    <div div="textbox" class="box1 col-span-full l-col-span-full l-row-start-1 l-row-end-7">
+                      
+                      <h3 class="text-b1">Join us at SDPA Industry Night 2025 to experience creativity and innovation firsthand! Discover inspiring projects like Brothers in Arms and explore the incredible talents of our Interactive Media Design students.</h3>
+
+                      <h4 class="text-b1">We extend a cordial invitation to an evening of professional engagement, featuring the presentation of Capstone Projects for Foundation Sixty6 and Student Portfolios. Attendees will have the opportunity to peruse and discuss the showcased work while enjoying a selection of catered food and refreshments.</h4>
+
+                  </div>
+
+
+                <!-- 2nd Text Container -->
+
+                <!-- Moving Sun / Mountains -->
+
+                  <div id="boxx2" class="box2 inner-box m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3 l-row-start-7 l-row-end-13">
+                    <div class="center">
+                      <div class="design">
+                        <div class="circle-1 center color-border">
+                          <div class="circle-2 center color-border">
+                            <div class="circle-3 center color-border">
+                              <div class="circle-4 center color-border">
+                                <div class="circle-5"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="mountain-1 shape shadow"></div>
+                        <div class="mountain-2 shape"></div>
+                        <div class="mountain-3 shape shadow"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Socials -->
+
+                  <div id="boxx3" class="box3 inner-box l-col-start-3 m-col-start-3 m-col-end-5 l-col-end-5 l-row-start-7 l-row-end-13">
+                    
+
+
+                   <!-- Ball animation starts here -->
+                    <div class="cursor-fx-target js-cursor-fx-target">
+                      <div class="cursor-fx-wrapper">
+                        <div class="cursor-fx-object cursor-fx-object--1"></div>
+                        <div class="cursor-fx-object cursor-fx-object--2"></div>
+                        <div class="cursor-fx-object cursor-fx-object--3"></div>
+                        <div class="cursor-fx-object cursor-fx-object--4"></div>
+                        <div class="cursor-fx-object cursor-fx-object--5"></div>
+                      </div>
+                    </div>
+                  <!-- Ball animation ends here -->
+                    
+                  
+                  </div>
+
+                </div>
+
+                <!-- 3rd Container Images / Services / Finalists -->
+
+                <!-- 1st Container -->
+
+                <div id="service2" class="box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+
+                    <div id="image2"></div>
+
+                    <h3>FoundationSixty6</h3>
+                    <p>Our Honorable Mention Finalists showcase a diverse range of innovative projects that stand out for their creativity and dedication. From Capstone Projects to unique portfolios, their work reflects fresh ideas and exceptional skill. These finalists push the boundaries of their fields, offering a glimpse into the future of creativity and innovation.</p>
+                    <p>FINALIST #1
+                      Jasmine Chicoine | Deviano Dames | Spencer Abbott | Shih-Hsuan Huang | Jonathan Yabes | Spencer Dipierdomenico</p>
+
+                </div>
+
+                <!-- 2nd Container -->
+
+                <div id="service3" class="box col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+
+                  <div id="image3"></div>
+
+                    <h3>FoundationSixty6</h3>
+                    <p>Our Honorable Mention Finalists showcase a diverse range of innovative projects that stand out for their creativity and dedication. From Capstone Projects to unique portfolios, their work reflects fresh ideas and exceptional skill. These finalists push the boundaries of their fields, offering a glimpse into the future of creativity and innovation.</p>
+                    <p>FINALIST #2
+                      Patricia Martins | Loui Hernandez | Valentina Perez | Marianne Febra | Sumin Lee</p>
+
+                </div>
+
+                 <!-- 3rd Container -->
+
+                <div id="service4" class="box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+
+                  
+                  <div id="image4"></div>
+
+                    <h3>FoundationSixty6</h3>
+                    <p>Our Honorable Mention Finalists showcase a diverse range of innovative projects that stand out for their creativity and dedication. From Capstone Projects to unique portfolios, their work reflects fresh ideas and exceptional skill. These finalists push the boundaries of their fields, offering a glimpse into the future of creativity and innovation.</p>
+                    <p>FINALIST #3
+                      Delilah Singer | Sophia Westrop | Suyog Ghimire | Bryan Hortua | Maria Jose | Samaya Kafle</p>
+                  
+                </div>
+
+                 <!-- 4th Container -->
+
+
+                <div id="service5" class="box col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+
+                      
+                  <div id="image5"></div>
+
+                    <h3>Honorable Mentions</h3>
+                    <p>We extend a cordial invitation to an evening of professional engagement, featuring the presentation of Capstone Projects for Foundation Sixty6 and Student Portfolios. Attendees will have the opportunity to peruse and discuss the showcased work while enjoying a selection of catered food and refreshments.</p>
+                    <p>TEAM #4
+                      Dev Pandya | Jeet Patel | Sahil Gosaliya | Aiden Wotton | Jason Difuntorum</p>
+                    
+
+                </div>
+
+                 <!-- 5th Container -->
+               
+                <div id="service6" class="box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+
+                  <div id="image6"></div>
+
+                    <h3>Honorable Mentions</h3>
+                    <p>We extend a cordial invitation to an evening of professional engagement, featuring the presentation of Capstone Projects for Foundation Sixty6 and Student Portfolios. Attendees will have the opportunity to peruse and discuss the showcased work while enjoying a selection of catered food and refreshments.</p>
+                    <p>TEAM #5
+                      Kwency Maye Dahilan | Rodrigo Rocha De Freitas | Jong Woog Yun | Tiago Da Silva Witt</p>
+                    
+
+                  </div>
+
+                <!-- 6th Container -->
+
+                <div id="service7" class="box col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+
+                  <div id="image7"></div>
+
+                  <h3>Honorable Mentions</h3>
+                  <p>We extend a cordial invitation to an evening of professional engagement, featuring the presentation of Capstone Projects for Foundation Sixty6 and Student Portfolios. Attendees will have the opportunity to peruse and discuss the showcased work while enjoying a selection of catered food and refreshments.</p>
+                  <p>TEAM #6
+                    Camila Romero | Emanuel Kabongo | Sultan Abdullh | Vasishth Chaudhari | Junish Arora</p>
+
+
+
+                </div>
+
+                <!-- 7th Container -->
+                
+                <div id="service8" class="box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+                  
+                  <h3>We are thrilled to invite you to an evening dedicated to professional collaboration, showcasing the remarkable Capstone Projects from Foundation Sixty6 alongside our talented Student Portfolios. Guests will have the chance to explore and engage with the displayed works while enjoying a delightful assortment of catered food and beverages.</h3>
+
+                  <h4> Join us for the SDPA Industry Night 2025 and immerse yourself in a celebration of creativity and innovation! Witness extraordinary projects like Brothers in Arms and appreciate the exceptional skills of our Interactive Media Design students.</h4>
+
+                </div>
+
+
+                <!-- Project Exhibition / Cards -->
+                <div id="container-box" class="box col-span-full m-col-span-full l-col-start-1 l-col-end-13">
+                    <div class="project-exhibit">
+                        <h3>Project Exhibit</h3>
+                        <img src="images/output-onlinegiftools.gif" alt="blinker-red">
+                    </div>
+                    <div id="card1" class="c-i-box">1</div>
+                    <div id="card2" class="c-i-box">2</div>
+                    <div id="card3" class="c-i-box">3</div>
+                    <div id="card4" class="c-i-box">4</div>
+                    <div id="card5" class="c-i-box">5</div>
+                </div>
+
+<!-- Service Continuation -->
+<!-- GHood -->
+
+<!-- Details of the Event -->
+                <div id="service9" class="box col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4"></div>
+
+                <div id="service10" class="box col-span-full m-col-start-4 m-col-end-7 l-col-start-4 l-col-end-7">
+
+                  <!-- starts here -->
+                  <div class="card">
+                    <div class="header">
+                      <div class="top">
+                        <div class="circle">
+                          <span class="red circle2"></span>
+                        </div>
+                        <div class="circle">
+                          <span class="yellow circle2"></span>
+                        </div>
+                        <div class="circle">
+                          <span class="green circle2"></span>
+                        </div>
+                        <div class="title">
+                          <p id="title2">event.css</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="code-container">
+                      <textarea class="area" id="code" name="code" readonly="">
+                        /* Event Information */
+                        .event-details {
+                            date: "Thursday, April 18, 2024";
+                            venue: "137 Dundas St, Fanshawe LDA Building, London, ON N6A 1E9";
+                            coordinates: "43.0013° N, 81.2737° W";
+                            event-type: "Interactive Media Design - Industry Night";
+                        }
+                        
+                        /* Full Schedule of the Event */
+                        .schedule {
+                            time-slot-1 {
+                                start: "16:00"; /* 4:00 PM */
+                                end: "16:30"; /* 4:30 PM */
+                                activity: "Industry members and Guests arrival";
+                                location: "Main Entrance, Ground Floor";
+                            }
+                        
+                            time-slot-2 {
+                                start: "16:30"; /* 4:30 PM */
+                                end: "18:00"; /* 6:00 PM */
+                                activity: "Spotlight Presentations";
+                                location: "The Good Foundation Inc. Theatre";
+                            }
+                        
+                            time-slot-3 {
+                                start: "18:00"; /* 6:00 PM */
+                                end: "19:00"; /* 7:00 PM */
+                                activity: "Student Portfolio Viewing";
+                                location: "Level 4 Labs";
+                            }
+                        
+                            time-slot-4 {
+                                start: "19:00"; /* 7:00 PM */
+                                end: "20:00"; /* 8:00 PM */
+                                activity: "Culinary Delights and Networking";
+                                location: "The Chef's Table";
+                            }
+                        }
+                      </textarea>
+                    </div>
+                  </div>
+
+                  <!-- ends here -->
+                  
+                </div>
+                <div id="service11" class="box col-span-full m-col-start-7 m-col-end-10 l-col-start-7 l-col-end-10">
+                  <!-- starts here -->
+
+                  <div id="service11">
+                    <div class="slideshow-container">
+                      <div class="slide fade">
+                        <img src="/celis_ezekiel_hackaton/celis_ezekiel_hackaton/images/images-details/2-d.jpeg" alt="Image 1">
+                      </div>
+                      <div class="slide fade">
+                        <img src="/celis_ezekiel_hackaton/celis_ezekiel_hackaton/images/images-details/3-d.jpeg" alt="Image 2">
+                      </div>
+                      <div class="slide fade">
+                        <img src="/celis_ezekiel_hackaton/celis_ezekiel_hackaton/images/images-details/4-d.jpeg" alt="Image 3">
+                      </div>
+                      <!-- Add more slides as needed -->
+                    </div>
+                  </div>
+                  
+                   
+
+
+
+                   <!-- ends here -->
+                  
+
+
+
+                </div>
+                <div id="service12" class="box col-span-full m-col-start-10 m-col-end-13 l-col-start-10 l-col-end-13">Service 12</div>
+
+
+            
+                            
+            </section>
+
+            <!-- Other Boxes Testimonials  -->
+
+            <section class="grid-con">
+                <h2 class="hidden">Services</h2>
+
+                <div  class="grid-row col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+
+                    <div id="in-b1" class="box inner-box col-span-full row-start-1 row-end-5 l-col-end-13 l-row-start-1 l-row-end-4"></div>
+                    <div id="in-b2" class="box inner-box col-span-full l-col-end-13 l-row-start-4 l-row-end-13"></div>
+                    
+
+                </div>
+
+                <div class=" grid-row col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+
+                    <div id="in-b3" class="inner-box l-col-start-1 l-col-end-13 l-row-start-4 l-row-end-13"></div>
+                    <div id="in-b4" class="inner-box div4 l-col-start-1 l-col-end-13 l-row-start-1 l-row-end-4">
+
+                      <div id="image-inb"></div>
+
+                      <h3>Interactive Media Design</h3>
+                      <p>Learn about our program and how it prepares students for the industry.
+
+                        Unlock Your Digital Creativity Future with Us! Explore a world of digital design, development, and innovation in our two-year Interactive Media Design program at Fanshawe College.
+                        
+                        Why Choose Us? Gain a comprehensive skill-set in web design, coding, animation, and more. Access cutting-edge facilities and industry-standard software. Open doors to exciting career opportunities in various fields. Stay ahead with emerging technologies and industry-relevant tools!</p>
+
+
+
+                    </div> 
+
+                </div>
+
+            </section>
+
+
+<!-- Team Developers -->
+
+            <section class="grid-con">
+                <h2 class="hidden">Services</h2>
+
+                <div id="service13" class="box col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">Service 13</div>
+
+                <div id="service14" class="box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">Service 14</div>
+
+<!-- Portfolios -->
+<!-- Portfolio1 -->
+
+                <div id="service15" class="col-span-full m-col-span-full l-col-start-1 l-col-end-4">
+
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@Ezekiel Celis</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+                <div id="service16" class="col-span-full m-col-span-full l-col-start-4 l-col-end-7">
+
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@saifAbusaad</div>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div id="service17" class="col-span-full m-col-span-full l-col-start-7 l-col-end-10">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@jashankumar</div>
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+                <div id="service18" class="col-span-full m-col-span-full  l-col-start-10 l-col-end-13">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@milana</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+<!-- Portfolio2 -->
+
+                <div id="service19" class="col-span-full m-col-span-full l-col-start-1 l-col-end-4">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@izelr</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+                <div id="service20" class="col-span-full m-col-span-full l-col-start-4 l-col-end-7">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@byrleflores</div>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div id="service21" class="col-span-full m-col-span-full l-col-start-7 l-col-end-10">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@sydbandarra</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+                <div id="service22" class="col-span-full m-col-span-full l-col-start-10 l-col-end-13">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@Dina</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+ <!-- Portfolio3 -->               
+
+                <div id="service23" class="col-span-full m-col-span-full l-col-start-1 l-col-end-4">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@jennifer</div>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div id="service24" class="col-span-full m-col-span-full l-col-start-4 l-col-end-7">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@Music</div>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div id="service25" class="col-span-full m-col-span-full l-col-start-7 l-col-end-10">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@bernardo</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+                <div id="service26" class="col-span-full m-col-span-full l-col-start-10 l-col-end-13">
+
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                      
+                            <div class="infotop">
+                      
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                        <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                        4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                        21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                        22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                        17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                        14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                        3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                        19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                        12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                        16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                        15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                        19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                         16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                         20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                        UI / EX Designer
+                      <br>
+                      <div class="name">@izekr</div>
+                        </div>
+                      </div>
+
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+
+        
+
+        <footer class="grid-con">
+            <h2 class="hidden">Footer</h2>
+            <div id="footer" class="box col-span-full col-start-1 col-end-5 m-col-span-full l-con-span-full">Footer</div>
+        </footer>
+        <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+       
+        <script src="js/main.js">
+
+            
+        </script>  
+
+        
+          
+    </body>
+</html>
